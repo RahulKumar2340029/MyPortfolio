@@ -1,0 +1,276 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.bug-walker {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    z-index: 10;
+}
+
+
+.bug-walker {
+    animation: walkBorder 15s linear infinite;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 12px;
+    max-width: 600px;
+}
+
+.languages {
+    grid-row: 1 / 4;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: #374151;
+    color: #9ca3af;
+    padding: 4px 8px;
+    margin: 2px;
+    font-size: 12px;
+    border: 1px solid #4b5563;
+}
+
+.skill-tag:hover {
+    background: #4b5563;
+    color: #f3f4f6;
+    transform: translateY(-1px);
+    transition: all 0.1s ease;
+}
+
+.card img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.card:hover img {
+    filter: grayscale(0%);
+}
+
+.animated-squares {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.square {
+    position: absolute;
+    border: 1px solid rgba(199, 120, 221, 0.3);
+    animation: floatDown linear infinite;
+}
+
+.square.dashed {
+    border-style: dashed;
+    border-color: rgba(171, 178, 191, 0.2);
+}
+
+.square.dotted {
+    border-style: dotted;
+    border-color: rgba(199, 120, 221, 0.4);
+}
+
+.square.double {
+    border-style: double;
+    border-color: rgba(171, 178, 191, 0.3);
+}
+
+@keyframes floatDown {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(calc(100vh + 100px)) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Parallax effect for squares */
+.parallax-square {
+    animation-duration: var(--duration);
+    animation-delay: var(--delay);
+}
+
+/* Your original styles */
+.bug-walker {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    z-index: 10;
+    animation: walkBorder 15s linear infinite;
+}
+
+@keyframes walkBorder {
+    0% {
+        top: -12px;
+        left: -12px;
+        transform: rotate(90deg);
+    }
+
+    24% {
+        top: -12px;
+        left: calc(100% - 12px);
+        transform: rotate(90deg);
+    }
+
+    25% {
+        top: -12px;
+        left: calc(100% - 12px);
+        transform: rotate(180deg);
+    }
+
+    49% {
+        top: calc(100% - 12px);
+        left: calc(100% - 12px);
+        transform: rotate(180deg);
+    }
+
+    50% {
+        top: calc(100% - 12px);
+        left: calc(100% - 12px);
+        transform: rotate(270deg);
+    }
+
+    74% {
+        top: calc(100% - 12px);
+        left: -12px;
+        transform: rotate(270deg);
+    }
+
+    75% {
+        top: calc(100% - 12px);
+        left: -12px;
+        transform: rotate(360deg);
+    }
+
+    99% {
+        top: -12px;
+        left: -12px;
+        transform: rotate(360deg);
+    }
+
+    100% {
+        top: -12px;
+        left: -12px;
+        transform: rotate(450deg);
+    }
+}
+
+
+/* download */
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #1B1B1B; /* Dark background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.svgIcon {
+  fill: #C778DD; /* Updated color */
+  width: 20px;
+  height: 20px;
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.icon2 {
+  width: 14px;
+  height: 3px;
+  border-bottom: 2px solid #C778DD;
+  border-left: 2px solid #C778DD;
+  border-right: 2px solid #C778DD;
+  margin-top: 4px;
+}
+
+.tooltip {
+  position: absolute;
+  right: -85px; /* Adjusted for new size */
+  opacity: 0;
+  background-color: #0C0C0C;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease, transform 0.3s ease;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+  font-size: 12px; /* Slightly smaller font */
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #0C0C0C;
+  transform: rotate(45deg);
+  left: -4%;
+}
+
+.Btn:hover .tooltip {
+  opacity: 1;
+  transform: translateX(10px);
+}
+
+.Btn:hover {
+  background-color: #C778DD;
+  box-shadow: 0px 6px 10px rgba(199, 120, 221, 0.4);
+}
+
+.Btn:hover .icon2 {
+  border-color: white;
+}
+
+.Btn:hover .svgIcon {
+  fill: white;
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+

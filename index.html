@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Schoolbell&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Rahul's Portfolio</title>
+
+</head>
+
+<body style="background-color: #282C33; font-family: Fira Code, monospace; overflow-x: hidden;">
+    <div class="animated-squares" id="animatedSquares"></div>
+
+    <div class="shadow-lg" style="background-color: #282C33; color: white;">
+        <nav class="flex flex-col md:flex-row justify-between items-center px-4 md:px-6 py-4 max-w-7xl mx-auto">
+            <!-- Logo / Title -->
+            <div class="text-xl font-semibold text-gray-800 mb-4 md:mb-0" style="color: white">
+                <span class="text-4xl">[R</span><span class="" style="color: #C778DD;">K]</span>
+            </div>
+
+            <div>
+                <ul class="flex flex-wrap items-center gap-4 md:gap-6 text-gray-700 justify-center">
+                    <li class="cursor-pointer transition-colors duration-200" style="color: #ABB2BF;"
+                        onmouseover="this.style.color='white';" onmouseout="this.style.color='#ABB2BF';">
+                        <a href="#"><span style="color: #C778DD;">#</span>home</a>
+                    </li>
+
+                    <li class="hover:text-blue-500 cursor-pointer" style="color: #ABB2BF"
+                        onmouseover="this.style.color='white';" onmouseout="this.style.color='#ABB2BF';">
+                        <a href="#projects">
+                            <span style="color: #C778DD;">#</span>works
+                        </a>
+                    </li>
+                    <li class="hover:text-blue-500 cursor-pointer" style="color: #ABB2BF"
+                        onmouseover="this.style.color='white';" onmouseout="this.style.color='#ABB2BF';">
+                        <a href="#about-me"><span style="color: #C778DD;">#</span>about-me</a>
+                    </li>
+                    <li class="hover:text-blue-500 cursor-pointer" style="color: #ABB2BF"
+                        onmouseover="this.style.color='white';" onmouseout="this.style.color='#ABB2BF';"><span
+                            style="color: #C778DD;">#</span>contacts</li>
+
+                    <li>
+                        <a href="Resume.pdf" download="RahulKumar2340029">
+                            <button class="Btn">
+                                <svg class="svgIcon" viewBox="0 0 384 512" height="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                                    </path>
+                                </svg>
+                                <span class="icon2"></span>
+                                <span class="tooltip">Resume</span>
+                            </button>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--line side   -->
+
+    <div class="flex flex-col lg:flex-row">
+        <div class="hidden lg:block">
+            <div class="h-50 bg-white w-px ml-20"></div>
+            <a href="https://www.github.com/RahulKumar2340029" class="" target="_blank">
+                <img src="./github.png" alt="" class="w-6 h-6 ml-17 m-4">
+            </a>
+            <a href="https://www.leetcode.com/RahulKumar9319" class="" target="_blank">
+                <img src="./image.png" alt="" class="w-6 h-6 ml-17 m-4">
+            </a>
+            <a href="https://codeforces.com/profile/TheDaemonThread" class="" target="_blank">
+                <img src="./codeforces.png" alt="" class="w-6 h-6 ml-17 m-4">
+            </a>
+        </div>
+
+        <!-- main body -->
+        <div class="flex flex-col lg:flex-row items-center justify-center w-full px-4 md:px-8">
+            <img src="./rpic1.png" alt="" class="w-full max-w-md lg:max-w-lg mb-8 lg:mb-0 lg:mr-8">
+
+            <div class="text-white text-center lg:text-left max-w-lg">
+                <div class="py-4 lg:py-24">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl font-light leading-tight">
+                        Rahul is <span style="color: #C778DD;">Web Designer</span> and <span style="color: #C778DD;">
+                            MERN
+                            Developer</span>
+                    </h1>
+                    <h2 class="mt-6 lg:mt-10 text-base md:text-lg">
+                        Blending frontend finesse, backend power, and algorithmic thinking to build smart software.
+                    </h2>
+                    <button class="mt-6 lg:mt-10 p-2 hover:shadow-xs hover:shadow-white"
+                        style="border:1px solid #C778DD;">
+                        <a href="#contacts">Contact me!</a>
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="relative border border-white p-4 md:p-6 max-w-xs md:max-w-lg lg:max-w-4xl shadow-lg mx-auto font-light mt-8 md:mt-12 lg:mt-16">
+        <!-- Walking bug -->
+        <div class="bug-walker">
+            <img src="./bug.png" alt="bug">
+        </div>
+
+        <div class="absolute text-xl text-gray-400 -top-4 -left-4">"</div>
+        <div class="absolute text-xl text-gray-400 -bottom-9 -right-4">"</div>
+
+        <p class="text-lg md:text-xl text-gray-100 text-center leading-relaxed">
+            Sometimes it's a frontend . Sometimes it's a missing semicolon. Always a lesson.
+        </p>
+        <hr class="border-gray-600 my-4 mx-4 md:mx-10">
+        <p class="text-right text-sm text-gray-400">- Dr. Who</p>
+    </div>
+
+    <!-- projects sectoin -->
+    <div id="projects" class="max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-24">
+        <!-- Title -->
+        <div class="flex items-center mb-8">
+            <p class="text-white text-2xl md:text-3xl font-light mr-4">
+                <span style="color: #C778DD;">#</span> projects
+            </p>
+            <div class="h-px flex-grow" style="background-color: #C778DD;"></div>
+            <a href="#" class="text-gray-400 text-sm ml-4 hover:text-white hidden md:block">View all →</a>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+            <!-- Card 1 - MathPoint -->
+            <div class="card border border-gray-500 shadow-md p-4 transition-all duration-300 hover:border-purple-400 hover:shadow-lg hover:shadow-purple-400/20">
+                <div class="mb-4 w-full h-48 rounded overflow-hidden">
+                    <!-- Replace this div with your actual website image -->
+                    <img src="./mathpoint.png" alt="MathPoint Website" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300">
+                    <!-- Fallback if no image -->
+                    <div class="w-full h-48 bg-gradient-to-br from-purple-600 to-blue-600 rounded flex items-center justify-center" style="display: none;">
+                        <div class="text-center text-white">
+                            <div class="text-4xl mb-2">📊</div>
+                            <h3 class="text-xl font-bold">MathPoint</h3>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm mb-2 hover:text-purple-300 transition-colors duration-300">Node.js MongoDB Express.js JWT HTML/CSS</p>
+                <h3 class="text-white text-lg font-semibold mb-2 hover:text-purple-300 transition-colors duration-300">MathPoint</h3>
+                <p class="text-gray-400 text-sm mb-4 hover:text-gray-300 transition-colors duration-300">Web platform for teachers to create math tests and students to take them with real-time scoring</p>
+                <div class="flex space-x-2">
+                    <a href="http://maths-point.vercel.app" target="_blank" class="px-3 py-2 text-white text-sm border border-purple-400 hover:bg-purple-400 hover:text-black transition-all duration-300">Live <~></a>
+                    <a href="https://github.com/RahulKumar2340029/MathPoint" target="_blank" class="px-4 py-2 bg-gray-700 text-gray-400 text-sm hover:bg-purple-600 hover:text-white transition-all duration-300">GitHub >=</a>
+                </div>
+            </div>
+
+            <!-- Card 2 - Postify -->
+            <div class="card border border-gray-500 shadow-md p-4 transition-all duration-300 hover:border-green-400 hover:shadow-lg hover:shadow-green-400/20">
+                <div class="mb-4 w-full h-48 rounded overflow-hidden">
+                    <!-- Replace this div with your actual website image -->
+                    <img src="./postify.png" alt="Postify Website" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300">
+                    <!-- Fallback if no image -->
+                    <div class="w-full h-48 bg-gradient-to-br from-green-600 to-teal-600 rounded flex items-center justify-center" style="display: none;">
+                        <div class="text-center text-white">
+                            <div class="text-4xl mb-2">✍️</div>
+                            <h3 class="text-xl font-bold">Postify</h3>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm mb-2 hover:text-green-300 transition-colors duration-300">MERN Stack Tailwind CSS Groq LLaMA-3 Framer Motion</p>
+                <h3 class="text-white text-lg font-semibold mb-2 hover:text-green-300 transition-colors duration-300">Postify</h3>
+                <p class="text-gray-400 text-sm mb-4 hover:text-gray-300 transition-colors duration-300">Full-stack blogging platform with AI writing assistant powered by Groq's LLaMA-3</p>
+                <div class="flex space-x-2">
+                    <a href="https://github.com/RahulKumar2340029/Postify_frontend" class="px-3 py-2 text-white text-sm border border-green-400 hover:bg-green-400 hover:text-black transition-all duration-300">FrontEnd <~></a>
+                    <a href="https://github.com/RahulKumar2340029/Postify_backend" target="_blank" class="px-4 py-2 bg-gray-700 text-gray-400 text-sm hover:bg-green-600 hover:text-white transition-all duration-300">GitHub >=</a>
+                </div>
+            </div>
+
+            <!-- Card 3 - Automated Sudoku Solver -->
+            <div class="card border border-gray-500 shadow-md p-4 transition-all duration-300 hover:border-orange-400 hover:shadow-lg hover:shadow-orange-400/20">
+                <div class="mb-4 w-full h-48 rounded overflow-hidden">
+                    <!-- Replace this div with your actual website image -->
+                    <img src="./sudoku.png" alt="Sudoku Solver Demo" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300">
+                    <!-- Fallback if no image -->
+                    <div class="w-full h-48 bg-gradient-to-br from-orange-600 to-red-600 rounded flex items-center justify-center" style="display: none;">
+                        <div class="text-center text-white">
+                            <div class="text-4xl mb-2">🧩</div>
+                            <h3 class="text-xl font-bold">Sudoku AI</h3>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm mb-2 hover:text-orange-300 transition-colors duration-300">Python PyAutoGUI Backtracking Algorithm</p>
+                <h3 class="text-white text-lg font-semibold mb-2 hover:text-orange-300 transition-colors duration-300">Automated Sudoku Solver</h3>
+                <p class="text-gray-400 text-sm mb-4 hover:text-gray-300 transition-colors duration-300">Python program that automatically solves Sudoku puzzles using recursive backtracking</p>
+                <div class="flex space-x-2">
+                    <a href="#" class="px-3 py-2 text-white text-sm border border-orange-400 hover:bg-orange-400 hover:text-black transition-all duration-300">Demo <~></a>
+                    <a href="https://github.com/RahulKumar2340029" target="_blank" class="px-4 py-2 bg-gray-700 text-gray-400 text-sm hover:bg-orange-600 hover:text-white transition-all duration-300">GitHub >=</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- skills section -->
+    <div id="skills" class="max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-24">
+        <div class="flex items-center mb-8">
+            <p class="text-white text-2xl md:text-3xl font-light mr-4">
+                <span style="color: #C778DD;">#</span> skills
+            </p>
+            <div class="h-px flex-grow" style="background-color: #C778DD;"></div>
+        </div>
+        <div class="flex justify-center">
+            <div class="skills-grid mx-auto w-full max-w-2xl">
+
+                <!-- Languages  -->
+                <div class="languages border border-gray-600 p-4">
+                    <h3 class="text-white text-sm font-semibold mb-3 flex items-center">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                        Languages
+                    </h3>
+                    <div class="space-y-2">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="border border-gray-600 p-3">
+                    <h3 class="text-white text-sm font-semibold mb-2 flex items-center">
+                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                        Databases
+                    </h3>
+                    <div class="space-y-1">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="border border-gray-600 p-3">
+                    <h3 class="text-white text-sm font-semibold mb-2 flex items-center">
+                        <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                        Frameworks
+                    </h3>
+                    <div class="space-y-1">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Express.js</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Other -->
+                <div class="border border-gray-600 p-3">
+                    <h3 class="text-white text-sm font-semibold mb-2 flex items-center">
+                        <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                        Tools & Tech
+                    </h3>
+                    <div class="space-y-1">
+                        <span class="skill-tag">VSCode</span>
+                        <span class="skill-tag">IntelliJ</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Tailwind</span>
+                        <span class="skill-tag">REST</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about me -->
+    <div id="about-me" class="max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-24">
+
+        <div class="flex items-center mb-8">
+            <p class="text-white text-2xl md:text-3xl font-light mr-4">
+                <span style="color: #C778DD;">#</span> about-me
+            </p>
+            <div class="h-px flex-grow" style="background-color: #C778DD;"></div>
+        </div>
+
+        <div class="about-me flex flex-col lg:flex-row text-white font-light mb-16 lg:mb-30 gap-8">
+
+            <div class="w-full lg:w-1/2">
+                <h1 class="text-xl md:text-2xl font-semibold mb-4">Hi! I am Rahul!</h1>
+                <p class="mb-4 leading-relaxed text-sm md:text-base">
+                    I'm a self-taught MERN stack developer based in New Delhi, India. With a passion for web
+                    development, I have honed my skills in creating responsive websites from scratch and transforming
+                    them into modern, user-friendly web experiences.
+                </p>
+                <p class="mb-4 leading-relaxed text-sm md:text-base">
+                    Turning my creativity and technical expertise into meaningful projects has been my focus for the
+                    past few years. I take pride in helping others establish their online presence by crafting
+                    innovative and efficient web solutions.
+                </p>
+                <p class="leading-relaxed text-sm md:text-base">
+                    Always eager to learn and adapt, I strive to stay up-to-date with the latest technologies and
+                    frameworks to ensure I deliver the best possible results in every project.
+                </p>
+            </div>
+
+            <div class="w-full lg:w-1/2 flex justify-center items-center">
+                <img src="coder.png" alt="Coder" class="w-full max-w-md rounded-lg">
+            </div>
+        </div>
+    </div>
+
+    <!-- education -->
+    <div class="flex flex-col lg:flex-row justify-center items-center gap-6 mt-10 px-4 lg:px-0">
+        <!-- Card 1 -->
+        <div class="backdrop-blur-md  border border-white/20 shadow-md rounded-xl p-6 w-full lg:w-1/3">
+            <h2 class="text-xl font-semibold text-[#C778DD] mb-2">Education #1</h2>
+            <p class="text-sm text-gray-300 mb-1">Institution: National Institute Of Technology, Karnataka</p>
+            <p class="text-sm text-gray-300 mb-1">Degree: Master of Computer Applications</p>
+            <p class="text-sm text-gray-300">CGPA: 9.26</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="backdrop-blur-md  border border-white/20 shadow-md rounded-xl p-6 w-full lg:w-1/3">
+            <h2 class="text-xl font-semibold text-[#C778DD] mb-2">Education #2</h2>
+            <p class="text-sm text-gray-300 mb-1">Institution: Shivaji College, University Of Delhi</p>
+            <p class="text-sm text-gray-300 mb-1">Degree: B.Sc (Hons.) Physics</p>
+            <p class="text-sm text-gray-300">CGPA: 8.79</p>
+        </div>
+    </div>
+
+    <!-- contacts -->
+    <div class="max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-24 mb-16 md:mb-24">
+        <div class="flex items-center mb-8">
+            <p class="text-white text-2xl md:text-3xl font-light mr-4">
+                <span style="color: #C778DD;">#</span> contacts
+            </p>
+            <div class="h-px flex-grow" style="background-color: #C778DD;"></div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row text-white font-light items-start gap-8">
+            <div class="flex-1 pr-0 lg:pr-8">
+                <p class="leading-relaxed text-sm md:text-base">
+                    I'm interested in frontend and full-stack developer opportunities. However, if you have any request
+                    or
+                    question, don't hesitate to contact me.
+                </p>
+            </div>
+            <div class="border border-gray-600 p-4 w-full lg:w-auto lg:min-w-fit">
+                <h3 class="text-white font-semibold mb-2">Message me here</h3>
+                <div class="space-y-2">
+                    <p class="text-gray-300 text-sm md:text-base"><span class="text-gray-400">Contact no:</span>
+                        9319337923</p>
+                    <p class="text-gray-300 text-sm md:text-base"><span class="text-gray-400">Email:</span>
+                        karnrahul786@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact form -->
+
+    <div class=" p-4" id="contacts">
+        <div
+            class="grid lg:grid-cols-2 items-start gap-12 p-8 mx-auto max-w-4xl max-lg:max-w-2xl  backdrop-blur-md border border-white/20 rounded-lg">
+            <div>
+                <h2 class="text-white text-3xl font-bold">Let's Talk</h2>
+                <p class="text-sm text-gray-300 mt-4 leading-relaxed">
+                    Have some big idea or brand to develop and need help? Reach out! We'd love to hear about your
+                    project.
+                </p>
+                <div class="mt-12">
+                    <h2 class="text-white text-base font-semibold">Email</h2>
+                    <ul class="mt-4">
+                        <li class="flex items-center">
+                            <div
+                                class="bg-gray-600/40 h-10 w-10 rounded-full flex items-center justify-center shrink-0 backdrop-blur-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#C778DD'
+                                    viewBox="0 0 479.058 479.058">
+                                    <path
+                                        d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
+                                        data-original="#000000" />
+                                </svg>
+                            </div>
+                            <a href="mailto:karnrahul786@gmail.com" class="text-sm ml-4">
+                                <small class="block text-white">Mail</small>
+                                <span class="text-blue-400 font-medium"
+                                    style="color: #C778DD;">karnrahul786@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <form class="space-y-4" id="contact-form">
+                <input type="text" placeholder="Name" name="user_name" required
+                    class="w-full text-white bg-transparent rounded-lg py-2.5 px-4 border border-gray-500 text-sm outline-0  transition-all duration-300"
+                    onfocus="this.style.borderColor='#C778DD'" onblur="this.style.borderColor='#6B7280'" />
+                <input type="email" placeholder="Email" name="user_email" required
+                    class="w-full text-white bg-transparent rounded-lg py-2.5 px-4 border border-gray-500 text-sm outline-0  transition-all duration-300"
+                    onfocus="this.style.borderColor='#C778DD'" onblur="this.style.borderColor='#6B7280'" />
+                <input type="text" placeholder="Subject" name="title"
+                    class="w-full text-white bg-transparent rounded-lg py-2.5 px-4 border border-gray-500 text-sm outline-0  transition-all duration-300"
+                    onfocus="this.style.borderColor='#C778DD'" onblur="this.style.borderColor='#6B7280'" />
+                <textarea placeholder="Message" rows="6" name="message"
+                    class="w-full text-white bg-transparent rounded-lg px-4 border border-gray-500 text-sm pt-2.5 outline-0  transition-all duration-300"
+                    onfocus="this.style.borderColor='#C778DD'" onblur="this.style.borderColor='#6B7280'"></textarea>
+                <button type="submit" style="background-color: #C778DD;"
+                    onmouseover="this.style.backgroundColor='#A05FC2'" onmouseout="this.style.backgroundColor='#C778DD'"
+                    class="text-white rounded-lg text-sm font-medium px-4 py-2.5 w-full cursor-pointer border-0 transition-all duration-300">
+                    Send Message
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="lg:hidden flex justify-center space-x-6 pb-8">
+        <a href="https://www.github.com/RahulKumar2340029" target="_blank">
+            <img src="./github.png" alt="" class="w-6 h-6">
+        </a>
+        <a href="https://www.leetcode.com/RahulKumar9319" target="_blank">
+            <img src="./image.png" alt="" class="w-6 h-6">
+        </a>
+        <a href="https://codeforces.com/profile/TheDaemonThread" target="_blank">
+            <img src="./codeforces.png" alt="" class="w-6 h-6">
+        </a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
